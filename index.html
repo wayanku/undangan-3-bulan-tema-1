@@ -15,10 +15,10 @@
     <link rel="icon" href="https://raw.githubusercontent.com/wayanku/undangan-metatah-sri-damayanti/main/toWEBP%20(1)/GST03202-min.webp" type="image/webp">
     <meta property="og:title" content="Undangan 3 Bulanan: I Wayan Sudiarsna ">
     <meta property="og:description" content="Jumat, 3 Oktober 2030 | 17.00 WITA - Selesai. Undangan upacara 3 Bulanan untuk I Wayan Sudiarsana.">
-    <!-- Ganti URL gambar ini dengan gambar yang ingin Anda tampilkan di WhatsApp -->
-    <meta property="og:image" content="" id="meta-og-image">
+    <!-- [PERBAIKAN] URL gambar diisi langsung agar terbaca oleh WhatsApp -->
+    <meta property="og:image" content="https://github.com/wayanku/undangan-3-bulan-tema-1/blob/main/foto%201%2Cfoto%204%2Cfoto%205%20bsr/foto%201.webp?raw=true" id="meta-og-image">
     <!-- Ganti URL ini dengan URL website Anda setelah di-hosting -->
-    <meta property="og:url" content="https://wayanku.github.io/undangan-metatah-sri-damayanti/">
+    <meta property="og:url" content="https://wayanku.github.io/undangan-metatah/">
     <meta property="og:type" content="website">
 
     <!-- IMPORT FONT KUSTOM -->
@@ -1081,7 +1081,7 @@
             // ==========================================================
             images: {
                 // Gambar untuk ikon tab browser dan tampilan di WhatsApp
-                favicon: "https://github.com/wayanku/undangan-3-bulan-tema-1/blob/main/foto%201%2Cfoto%204%2Cfoto%205%20bsr/foto%201.webp?raw=true",
+                favicon: "https://github.com/wayanku/undangan-3-bulan-tema-1/blob/main/foto%201%2Cfoto%204%2Cfoto%205%20bsr/foto%201.webp?raw=true", // URL ini juga harus diisi manual di <link rel="icon"> jika ingin konsisten
                 ogImage: "https://github.com/wayanku/undangan-3-bulan-tema-1/blob/main/foto%201%2Cfoto%204%2Cfoto%205%20bsr/foto%201.webp?raw=true",
                 // Foto profil utama (tetap)
                 profile: "https://github.com/wayanku/undangan-3-bulan-tema-1/blob/main/foto%201%2Cfoto%204%2Cfoto%205%20bsr/foto%204.webp?raw=true",
@@ -1317,7 +1317,7 @@
 
             // --- Mengisi Gambar ---
             document.querySelector('link[rel="icon"]').href = data.images.favicon;
-            document.getElementById('meta-og-image').content = data.images.ogImage;
+            // document.getElementById('meta-og-image').content = data.images.ogImage; // Baris ini tidak lagi diperlukan karena sudah diisi manual di HTML
             document.getElementById('profile-pic').src = data.images.profile;
             document.getElementById('profile-pic').alt = data.person.name;
             document.getElementById('event-card-image').src = data.images.eventCard;
